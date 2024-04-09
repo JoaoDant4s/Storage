@@ -40,7 +40,7 @@ public class DemoApplication implements CommandLineRunner {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@Override
+	@Override 
 	public void run(String... args) throws Exception {
 		CSVReader csvReader = new CSVReader();
 		MySqlRepository mySqlRepository = new MySqlRepository(jdbcTemplate);
@@ -51,6 +51,5 @@ public class DemoApplication implements CommandLineRunner {
 		mySqlRepository.save(products);
 
 		csvReader.clean();
-		System.out.println("finalized program");
 	}
 }
