@@ -6,7 +6,7 @@ services:
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: "senhasenha@123"
-      MYSQL_DATABASE: StorageCoders
+      MYSQL_DATABASE: storage
     cap_add:
       - SYS_NICE
     ports:
