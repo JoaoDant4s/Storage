@@ -3,9 +3,9 @@ version: '3'
 services:
 
   mysql-development:
-    image: mysql
+    image: mysql:latest
     environment:
-      MYSQL_ROOT_PASSWORD: "senhasenha@123"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"
       MYSQL_DATABASE: storage
     cap_add:
       - SYS_NICE

@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import com.example.demo.controller.ProductController;
 import com.example.demo.csv.CSVReader;
 import com.example.demo.model.Produto;
 import com.example.demo.repository.MySqlRepository;
@@ -44,12 +45,17 @@ public class DemoApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		CSVReader csvReader = new CSVReader();
 		MySqlRepository mySqlRepository = new MySqlRepository(jdbcTemplate);
-
+		ProductController productController = new ProductController();
 		createTable();
 
 		List<Produto> products = csvReader.readCSV();
 		mySqlRepository.save(products);
 
+		List<String> categories = productController.getAllCategories(products);
+		productController.printCategories(categories);
+		productController.printProductsByCategory(categories, products);
+		productController.printProductAverage(products);
+		productController.printLowerStockProducts(products);
 		csvReader.clean();
 	}
 }

@@ -1,16 +1,16 @@
 produto_id, nome, quantidade, cateogia, preco
-1,Teclado,28,Informática,20.00
-2,Mouse,35,Informática,15.50
-3,Fone de Ouvido,50,Informática,30.00
-4,Monitor,15,Informática,150.00
-5,Caneta,100,Papelaria,2.50
-6,Caderno,50,Papelaria,10.00
-7,Lápis,200,Papelaria,1.00
-8,Calculadora,20,Material Escolar,25.00
-9,Carteira,40,Acessórios,15.00
-10,Mochila,30,Acessórios,50.00
-11,Impressora,10,Informática,200.00
-12,Scanner,5,Informática,100.00
-13,Mousepad,50,Informática,5.00
-14,Luminária,20,Decoração,35.00
-15,Quadro,15,Decoração,18.00
+1,Teclado,1,Informática,20.0
+2,Mouse,3,Informática,15.5
+3,Fone de Ouvido,50,Informática,30.0
+4,Monitor,15,Informática,150.0
+5,Caneta,100,Papelaria,2.5
+6,Caderno,50,Papelaria,10.0
+7,Lápis,200,Papelaria,1.0
+8,Calculadora,20,Material Escolar,25.0
+9,Carteira,2,Acessórios,15.0
+10,Mochila,1,Acessórios,50.0
+11,Impressora,10,Informática,200.0
+12,Scanner,5,Informática,100.0
+13,Mousepad,50,Informática,5.0
+14,Luminária,2,Decoração,35.0
+15,Quadro,15,Decoração,18.0
